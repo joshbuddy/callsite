@@ -54,6 +54,15 @@ module Callsite
     require 'loaders/load_path'
   end
   
+  def self.activate_all
+    activate_string_methods
+    activate_file_methods
+    activate_module_methods
+    activate_kernel_dir_methods
+    activate_kernel_require_methods
+    activate_loadpath_methods
+  end
+  
   module StringMethods
     unless method_defined?(:~@)
       def ~@
