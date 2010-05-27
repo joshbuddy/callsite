@@ -46,8 +46,8 @@ In this case, lib/whatever will be treated as a relative path from the definitio
 
 === Callsite.activate_kernel_dir_methods
 
-This adds the <tt>__DIR_REL__</tt> and optionally <tt>__DIR__</tt> and require_relative methods to Kernel. <tt>__DIR__</tt> or <tt>__DIR_REL__</tt> will give you your current directory, much like
-<tt>__FILE__</tt> gives you the current <tt>__FILE__</tt> you're in. +require_relative+ is like +require+ .. only, it's relative.
+This adds the <tt>\__DIR_REL__</tt> and optionally <tt>\__DIR__</tt> and require_relative methods to Kernel. <tt>\__DIR__</tt> or <tt>\__DIR_REL__</tt> will give you your current directory, much like
+<tt>\__FILE__</tt> gives you the current <tt>\__FILE__</tt> you're in. +require_relative+ is like +require+ .. only, it's relative.
 
 === Callsite.activate_kernel_require_methods
 
