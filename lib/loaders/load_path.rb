@@ -17,10 +17,19 @@ $LOAD_PATH.instance_eval do
   end
 
   def add_current
-    self << __DIR_REL__(caller.first)
+    add(__DIR_REL__(caller.first))
   end
 
   def add_current!
-    self.unshift(__DIR_REL__(caller.first))
+    add!(__DIR_REL__(caller.first))
+  end
+
+  def add(path)
+    push(path) unless include?(path)
+  end
+
+  def add!(path)
+    delete(path)
+    unshift(path)
   end
 end

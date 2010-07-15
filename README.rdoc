@@ -18,7 +18,7 @@ Gives back
 
 This is also suitable for parsing a backtrace, to get detailed information about it.
 
-There are also five methods which patch existing objects to give you powerful usage of the caller.
+There are also six methods which patch existing objects to give you powerful usage of the caller.
 
 === Callsite.activate_string_methods
 
@@ -57,9 +57,7 @@ This adds a couple of weird methods to Kernel, require_next and require_all. The
 
 This adds some super useful methods to $LOAD_PATH. There are find_file (finds a single file on your load path), find_all_files (finds all of em), add_current (adds to the end of the load path your current dir) and add_current! (adds it to the beginning).
 
-== I lied
-
-I said there were 5, I meant 6. There are 5 lights.
+As well, this gives you add and add!, both of which guard against a path being added twice to the load path. Add appends to the end if it doesn't exist, and add! forces it to the beginning.
 
 == This deprecates +dirge+ and +load_path_find+
 

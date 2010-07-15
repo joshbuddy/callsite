@@ -38,7 +38,7 @@ describe 'load path find' do
   
   it "should add the current path" do
     $LOAD_PATH.add_current
-    $LOAD_PATH.last.should == __DIR__
+    $LOAD_PATH.should include(__DIR__)
   end
 
   it "should add the current path to the start" do

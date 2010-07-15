@@ -1,5 +1,7 @@
 $LOAD_PATH << File.dirname(__FILE__)
 
+require 'callsite/version'
+
 module Callsite
   UnparsableCallLine = Class.new(RuntimeError)
   Line = Struct.new(:filename, :line, :method)
