@@ -4,7 +4,7 @@ module Kernel
   end
 
   def require_next(req)
-    found, current = false, File.expand_path(caller.first[/^[^:]+/])
+    found, current = false, File.expand_path(caller.first[/(.*)(:\d+)/,1])
     $LOAD_PATH.find_all_files(req, ".rb") do |file|
       if found
         $LOADED_FEATURES << req
