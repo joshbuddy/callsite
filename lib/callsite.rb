@@ -14,7 +14,9 @@ module Callsite
   end
 
   def self.parse(input)
-    if input.is_a?(Array)
+    if input.respond_to?(:backtrace)
+      parse(input.backtrace)
+    elsif input.is_a?(Array)
       block_given? ?
         input.each{|line| yield parse(line)} :
         input.map{|line| parse(line)}
