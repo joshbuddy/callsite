@@ -18,6 +18,21 @@ Gives back
 
 This is also suitable for parsing a backtrace, to get detailed information about it.
 
+  begin
+    raise
+  rescue
+    pp Callsite.parse($!)
+  end
+
+Produces
+
+  => [#<struct Callsite::Line filename="(irb)", line=27, method="irb_binding">,
+   #<struct Callsite::Line
+    filename="/opt/local/lib/ruby/1.8/irb/workspace.rb",
+    line=52,
+    method="irb_binding">,
+   #<struct Callsite::Line filename="", line=0, method=nil>]
+
 There are also six methods which patch existing objects to give you powerful usage of the caller.
 
 === Callsite.activate_string_methods
