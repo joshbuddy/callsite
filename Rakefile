@@ -1,5 +1,6 @@
 require 'spec'
 require 'spec/rake/spectask'
+desc "Run all specs"
 task :spec => ['spec:dirge', 'spec:load_path_find', 'spec:callsite']
 namespace(:spec) do
   Spec::Rake::SpecTask.new(:dirge) do |t|
