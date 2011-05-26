@@ -28,5 +28,5 @@ namespace(:spec) do
 
 end
 
-require 'ext/gem_rake'
+require 'bundler'
 Bundler::GemHelper.install_tasks

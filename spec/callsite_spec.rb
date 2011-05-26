@@ -13,4 +13,11 @@ describe 'Callsite' do
     @parsed.line.should == 12
     @parsed.method.should == 'something'
   end
+
+  it "should parse dir:name/file:name:12:in `something more like this'" do
+    @parsed = Callsite.parse("dir:name/file:name:12:in `something more like this'")
+    @parsed.filename.should == 'dir:name/file:name'
+    @parsed.line.should == 12
+    @parsed.method.should == 'something more like this'
+  end
 end
