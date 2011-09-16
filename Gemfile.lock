@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    callsite (0.0.5)
+    callsite (0.0.6)
       bundler (~> 1.0.0)
 
 GEM
