@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Caller/backtrace parser with some useful utilities for manipulating the load path, and doing other relative things.}
   s.test_files = `git ls-files`.split("\n").select{|f| f[/^spec/]}
 
-  s.add_dependency 'bundler', "~> 1.0.0"
+  s.add_development_dependency 'bundler', "~> 1.0.0"
   s.add_development_dependency 'rake', '0.8.7'
   s.add_development_dependency 'rspec', "~> 1.3.0"
 end
