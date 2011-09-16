@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/joshbuddy/callsite}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.3.5}
   s.summary = %q{Caller/backtrace parser with some useful utilities for manipulating the load path, and doing other relative things.}
   s.test_files = `git ls-files`.split("\n").select{|f| f[/^spec/]}
 
