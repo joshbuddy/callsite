@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    callsite (0.0.6)
+    callsite (0.0.7)
 
 GEM
   remote: http://rubygems.org/
