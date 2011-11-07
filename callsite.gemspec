@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{Caller/backtrace parser with some useful utilities for manipulating the load path, and doing other relative things.}
+  s.license = "MIT"
+
   s.test_files = `git ls-files`.split("\n").select{|f| f[/^spec/]}
 
   s.add_development_dependency 'bundler', "~> 1.0.0"

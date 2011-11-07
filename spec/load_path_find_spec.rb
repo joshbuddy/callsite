@@ -1,4 +1,4 @@
-require 'lib/load_path_find'
+require 'load_path_find'
 
 $: << File.expand_path(File.join(File.dirname(__FILE__), 'data', 'dir1'))
 $: << File.expand_path(File.join(File.dirname(__FILE__), 'data', 'dir2'))
