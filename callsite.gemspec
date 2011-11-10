@@ -24,8 +24,8 @@ Gem::Specification.new do |s|
 
   s.test_files = `git ls-files`.split("\n").select{|f| f[/^spec/]}
 
-  s.add_development_dependency 'bundler', "~> 1.0.0"
-  s.add_development_dependency 'rake', '= 0.8.7'
-  s.add_development_dependency 'rspec', "~> 1.3.0"
+  s.add_development_dependency 'bundler', '~> 1.0.0'
+  s.add_development_dependency 'rake',    '~> 0.8.7'
+  s.add_development_dependency 'rspec',   '~> 1.3.0'
 end
 
